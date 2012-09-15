@@ -78,7 +78,7 @@ Jekyll includes a web server for your debugging pleasure.  Let's test that out n
 If everything is up and running, you should be able to view your "Smoke Test" page by navigating to http://localhost:4000 .  We're not actually doing anything with Jekyll here but it's still a useful test.  
 
 #### Generate an Interesting Structure with Jekyll ####
-Basically, Jekyll combines source and layout files that have been arranged [in a well defined structure](https://github.com/mojombo/jekyll/wiki/usage) into the plain HTML that will power your blog. We're going to start off by working through a very short example.   
+Basically, Jekyll combines source and layout files that have been arranged [in a well defined structure](https://github.com/mojombo/jekyll/wiki/usage) into the plain HTML that will make up your blog. We're going to start off by working through a very short example.   
 
 1. Create a `_config.yml` file
 
