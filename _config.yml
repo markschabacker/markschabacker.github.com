@@ -1,0 +1,4 @@
+# Jekyll
+exclude: 
+
+permalink: /blog/:year/:month/:day/:title/
