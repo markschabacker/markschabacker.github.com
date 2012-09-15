@@ -10,7 +10,7 @@ I have put off blogging for entirely too long.  It's time to check off the "Blog
 
 * If you decide not to use DNSimple, expect to jump through a few more hoops when setting up DNS in the steps below
 
-#### 2. Create a Repo for Your Blog ####
+#### 2. Create a GitHub Repo for Your Blog ####
 [GitHub](https://www.github.com) will graciously host a User/Organization or Project page for completely free.  You just need to create a repo in a specific format and GitHub will do all the heavy lifting.
 
 1. Create a new repository for your page.  The repository name must follow [a very specific naming scheme](https://help.github.com/articles/user-organization-and-project-pages).
@@ -47,7 +47,7 @@ I have put off blogging for entirely too long.  It's time to check off the "Blog
 Using DNSimple, this is as easy as: 
     1. Navigate to your domain
     2. Scroll down to "GitHub Pages"
-    3. Click "Add".
+    3. Click "Add"
 
 6. Create a CNAME record in your repository
 
