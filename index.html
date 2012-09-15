@@ -4,7 +4,6 @@ title: Blog Example
 ---
 <div class="row">
   <div class="offset1 span10">
-    <h1>{{ page.title }}</h1>
     {% for post in site.posts %}
       <div class="well post">
         <p><h2>{{ post.title }}</h2><span class="post-date">{{ post.date | date_to_string }}</span></p>

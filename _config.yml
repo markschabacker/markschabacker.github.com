@@ -1,4 +1,6 @@
 # Jekyll
 exclude: 
 
+markdown: rdiscount
+
 permalink: /blog/:year/:month/:day/:title/
