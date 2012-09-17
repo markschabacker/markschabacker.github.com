@@ -13,6 +13,6 @@ navigation:
   alt_url: /index.html
   layout: default
 - text: Archive
-  url: /archive/
-  alt_url: /archive/index.html
+  url: /blog/
+  alt_url: /blog/index.html
   layout: archive
