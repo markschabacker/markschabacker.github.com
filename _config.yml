@@ -4,3 +4,15 @@ exclude:
 markdown: rdiscount
 
 permalink: /blog/:year/:month/:day/:title/
+
+tagline: Mark Schabacker
+
+navigation:
+- text: Home
+  url: /
+  alt_url: /index.html
+  layout: default
+- text: Archive
+  url: /archive/
+  alt_url: /archive/index.html
+  layout: archive

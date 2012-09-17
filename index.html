@@ -4,6 +4,24 @@ title: Blog - Mark Schabacker
 ---
 <div class="row">
   <div class="offset1 span10">
+    {% for post in site.posts limit: 5 %}
+      <div class="post">
+        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        <p>{{ post.content }}</p>
+        <div>
+          <span class="badge badge-inverse">
+            {{ post.date | date_to_string }}
+          </span>
+          <div class="pull-right">
+            <span class="label">Mark</span>
+          </div>
+      </div>
+      <hr />
+    {% endfor %}
+  </div>
+</div>
+<div class="row">
+  <div class="offset1 span10">
     {% for post in site.posts %}
       <div class="post">
         <h1>{{ post.title }}</h1>
