@@ -1,14 +1,22 @@
 ---
 layout: default
-title: Blog Example
+title: Blog - Mark Schabacker
 ---
 <div class="row">
   <div class="offset1 span10">
     {% for post in site.posts %}
-      <div class="well post">
-        <p><h2>{{ post.title }}</h2><span class="post-date">{{ post.date | date_to_string }}</span></p>
+      <div class="post">
+        <h1>{{ post.title }}</h1>
         <p>{{ post.content }}</p>
+        <div>
+          <span class="badge badge-inverse">
+            {{ post.date | date_to_string }}
+          </span>
+          <div class="pull-right">
+            <span class="label">Mark</span>
+          </div>
       </div>
+      <hr />
     {% endfor %}
   </div>
 </div>
