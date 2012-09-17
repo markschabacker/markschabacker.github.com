@@ -13,3 +13,7 @@ body {
 .post-date {
   color:#AAA;
 }
+
+.badge a {
+  color:white;
+}
