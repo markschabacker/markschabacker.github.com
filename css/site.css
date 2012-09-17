@@ -17,3 +17,11 @@ body {
 .badge a {
   color:white;
 }
+
+.footer {
+  text-align:center;
+}
+
+.content {
+  min-height:400px;
+}
