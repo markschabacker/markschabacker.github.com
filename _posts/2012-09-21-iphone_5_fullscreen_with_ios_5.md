@@ -3,6 +3,14 @@ layout: post
 title: "Full Screen iPhone 5 Layouts with iOS 5"
 ---
 
+### UPDATE - 20120927 ###
+I just submitted another iOS 5.1 SDK app using the steps detailed below and received an auto-rejection for the following:
+
+> __Invalid Launch Image__ - You app contains a launch image with a size modifier that is only supported for apps built with the iOS 6.0 SDK or later.
+
+The grammatical error tells me that this is serious business.
+
+### Original Article ###
 Keeping with Apple's traditional secrecy surrounding new product launches, the average iOS developer received confirmation of the iPhone 5's new screen size at the same time as the rest of the world: Apple's September 12th media event.  New developer documentation was released soon afterward and the twittersphere was abuzz with the ```Default-568h@2x.png``` file.
 
 <blockquote class="twitter-tweet"><p>Took me an annoying few minutes to find this: to enable the tall iPhone screen, just add a 640x1136 launch image named:Default-568h@2x.png</p>&mdash; Marco Arment (@marcoarment) <a href="https://twitter.com/marcoarment/status/246043738474967040" data-datetime="2012-09-13T00:32:53+00:00">September 13, 2012</a></blockquote>
