@@ -5,12 +5,16 @@ title: Blog - Mark Schabacker
 <div class="row">
   <div class="offset1 span10">
     {% for post in site.posts limit: 5 %}
-      <div class="post">
-        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      <article class="post">
+        <header>
+          <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        </header>
         <p>{{ post.content }}</p>
         <div>
           <span class="badge badge-inverse">
-            {{ post.date | date_to_string }}
+            <time datetime="{{ post.date | date: "%Y-%m-%d" }}" pubdate>
+              {{ post.date | date_to_string }}
+            </time>
           </span>
           <span class="badge">
             <a href="{{ post.url }}">Permalink</a>
@@ -18,7 +22,8 @@ title: Blog - Mark Schabacker
           <div class="pull-right">
             <span class="label">Mark</span>
           </div>
-      </div>
+        </div>
+      </article>
       <hr />
     {% endfor %}
   </div>
