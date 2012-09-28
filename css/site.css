@@ -2,6 +2,10 @@ body {
   background-image:url('../images/grey.png');
 }
 
+html, body {
+  height: 100%;
+}
+
 .post {
   padding-top:0px;
 }
@@ -25,3 +29,8 @@ body {
 .content {
   min-height:400px;
 }
+
+.sidebar-nav { 
+  padding:9px 0;
+}
+

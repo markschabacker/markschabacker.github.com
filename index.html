@@ -2,29 +2,25 @@
 layout: default
 title: Blog - Mark Schabacker
 ---
-<div class="row">
-  <div class="offset1 span10">
-    {% for post in site.posts limit: 5 %}
-      <article class="post">
-        <header>
-          <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-        </header>
-        <p>{{ post.content }}</p>
-        <div>
-          <span class="badge badge-inverse">
-            <time datetime="{{ post.date | date: "%Y-%m-%d" }}" pubdate>
-              {{ post.date | date_to_string }}
-            </time>
-          </span>
-          <span class="badge">
-            <a href="{{ post.url }}">Permalink</a>
-          </span>
-          <div class="pull-right">
-            <span class="label">Mark</span>
-          </div>
-        </div>
-      </article>
-      <hr />
-    {% endfor %}
-  </div>
-</div>
+{% for post in site.posts limit: 5 %}
+  <article class="post">
+    <header>
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    </header>
+    <p>{{ post.content }}</p>
+    <div>
+      <span class="badge badge-inverse">
+        <time datetime="{{ post.date | date: "%Y-%m-%d" }}" pubdate>
+          {{ post.date | date_to_string }}
+        </time>
+      </span>
+      <span class="badge">
+        <a href="{{ post.url }}">Permalink</a>
+      </span>
+      <div class="pull-right">
+        <span class="label">Mark</span>
+      </div>
+    </div>
+  </article>
+  <hr />
+{% endfor %}
