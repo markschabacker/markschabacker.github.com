@@ -3,7 +3,7 @@ layout: post
 title: "agvtool with New Projects"
 ---
 
-I use Apple's wonderful [agvtool](https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man8/agvtool.8.html) for Xcode project versioning in practically every personal or work project.  It can't be beat for easy versioning.  For some unexplained reason, new Xcode projects are not initialized with the necessary settings to use it right out of the box.  This annoyance inevitably bites me at the worst time possible: the first [TestFlight](https://testflightapp.com/) deployment for a new app.  
+I use Apple's wonderful [agvtool](https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man8/agvtool.8.html) for Xcode project versioning in practically every personal or work project.  It can't be beat for easy versioning.  For some unexplained reason, new Xcode projects are not initialized with the necessary settings to use agvtool right out of the box.  This annoyance inevitably bites me at the worst time possible: the first [TestFlight](https://testflightapp.com/) deployment for a new app.  
 
 <pre>
 [me@mybox ShinyNewApp(master)]$ agvtool bump -all
