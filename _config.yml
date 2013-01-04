@@ -1,10 +1,8 @@
 # Jekyll
 exclude: 
-
 markdown: rdiscount
 
 permalink: /blog/:year/:month/:day/:title/
-
 tagline: Mark Schabacker
 
 navigation:
