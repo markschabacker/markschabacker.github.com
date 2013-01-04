@@ -11,7 +11,7 @@ There does not seem to be a CURRENT_PROJECT_VERSION key set for this project.  A
 [me@mybox ShinyNewApp(master)]$ # begin furious googling for CURRENT_PROJECT_VERSION
 </pre>
 
-Fortunately, this is an easy fix.
+Fortunately, this is an easy fix:
 
 1. Open your project in Xcode
 2. Navigate to your project in Xcode's __Project Navigator__ (⌘1)
