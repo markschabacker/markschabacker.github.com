@@ -1,6 +1,6 @@
 # Jekyll
 exclude: []
-markdown: rdiscount
+markdown: redcarpet
 
 permalink: /blog/:year/:month/:day/:title/
 tagline: Mark Schabacker
