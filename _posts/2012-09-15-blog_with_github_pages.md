@@ -89,45 +89,57 @@ Basically, Jekyll combines source and layout files that have been arranged [in a
 2. Add some test blog posts in the _posts folder
 
 `_posts/2012-09-14-my-first-post.md`
-        ---
-        layout: post
-        title: "First Post!"
-        ---
-        
-        This is the first post
+
+```
+---
+layout: post
+title: "First Post!"
+---
+
+This is the first post
+```
 
 `_posts/2012-09-15-back-for-more.md`
-        ---
-        layout: post
-        title: "Back For More"
-        ---
-        
-        This is the second post
+
+```
+---
+layout: post
+title: "Back For More"
+---
+
+This is the second post
+```
 
 `_layouts/default.html`
-        <!DOCTYPE html>
-        <html lang="en">
-          <head>
-            <meta charset="utf-8">
-            <title>{{ page.title }}</title>
-          </head>
-          <body>
-            {{ content }}
-          </body>
-        </html>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% raw %}{{ page.title }}{% endraw %}</title>
+  </head>
+  <body>
+    {% raw %}{{ content }}{% endraw %}
+  </body>
+</html>
+```
 
 `index.html`
-        ---
-        layout: default
-        title: Blog Example
-        ---
-            <h1>{{ "{{ page.title " }}}}</h1>
-            {{ "{% for post in site.posts " }}%}
-              <div>
-                <p><h2>{{ "{{ post.title " }}}}</h2>{{  "{{ post.date | date_to_string " }}}}</p>
-                <p>{{ "{{ post.content " }}}}</p>
-              </div>
-            {{ "{% endfor " }}%}
+
+```
+---
+layout: default
+title: Blog Example
+---
+    <h1>{{ "{{ page.title " }}}}</h1>
+    {{ "{% for post in site.posts " }}%}
+      <div>
+        <p><h2>{{ "{{ post.title " }}}}</h2>{{  "{{ post.date | date_to_string " }}}}</p>
+        <p>{{ "{{ post.content " }}}}</p>
+      </div>
+    {{ "{% endfor " }}%}
+```
 
 Generate the site and browse to http://localhost:4000
 
