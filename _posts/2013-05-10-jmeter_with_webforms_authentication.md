@@ -65,9 +65,9 @@ Application performance for multiple concurrent logins with the same user is pro
 2. Populate `credentials.csv` with the login credentials you want to use (mind extra spaces)
 
 ```
-login\_1,password\_1
-login\_2,password\_2
-login\_3,password\_3
+login_1,password_1
+login_2,password_2
+login_3,password_3
 ```
 
 #### Add CSV Data Set Config
