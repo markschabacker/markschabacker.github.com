@@ -43,3 +43,33 @@ html, body {
 {
   width:10ex;
 }
+
+.header-image
+{
+  text-align:center;
+}
+
+.img-header
+{
+  vertical-align:middle;
+}
+
+.hero-unit-tight
+{
+  padding:20px;
+}
+
+.lead-header
+{
+  position:relative;
+  height:180px;
+  margin-bottom:0px;
+}
+
+.lead-header-content
+{
+  position:absolute;
+  top:50%;
+  height:4em;
+  margin-top:-2em;
+}.
