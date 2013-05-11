@@ -6,17 +6,12 @@
             <header>
               <h1>{{ page.title }}</h1>
             </header>
-            <p>{{ content }}</p>
-            <div>
-              <span class="badge badge-inverse">
-                <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>
-                {{ page.date | date_to_string }}
-                </time>
-              </span>
-              <div class="pull-right">
-                <span class="label">Mark</span>
-              </div>
+            <div class="label label-inverse">
+              <time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>
+              {{ page.date | date_to_string }}
+              </time>
             </div>
+            <p>{{ content }}</p>
             <br />
             <div id="disqus_thread"></div>
             <script type="text/javascript">
