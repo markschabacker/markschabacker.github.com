@@ -30,7 +30,16 @@ html, body {
   min-height:400px;
 }
 
-.sidebar-nav { 
+.sidebar-nav {
   padding:9px 0;
 }
 
+.label-date
+{
+  width:12ex;
+}
+
+.label-project
+{
+  width:10ex;
+}
