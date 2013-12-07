@@ -30,6 +30,11 @@
           return;
         }
 
+        var $parentAnchor = $image.closest("a");
+        if($parentAnchor && (0 < $parentAnchor.length)) {
+          return;
+        }
+
         $image = $image.clone();
         $image.wrap('<div class="lightbox-content" />');
         $lightboxContent = $image.parent();
