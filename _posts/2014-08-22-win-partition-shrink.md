@@ -163,6 +163,9 @@ At this point, your system may boot up and run correctly.  If not, we will use a
 
     ![Extend Volume](/images/16_extend_volume.png)
 
-## Conclusion
+## References
+
+- [Working Around Windows Vista’s "Shrink Volume" Inadequacy Problems](http://www.howtogeek.com/howto/windows-vista/working-around-windows-vistas-shrink-volume-inadequacy-problems/)
+- [Clonezilla to image SSD fails with MBR/GPT mismatch - Overclockers UK Forums](http://forums.overclockers.co.uk/showthread.php?t=18545787)
 
 I hope this long and rambling guide is useful to other folks.  I know that I'll probably use it myself in the near future.
