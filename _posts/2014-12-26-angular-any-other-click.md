@@ -6,7 +6,7 @@ title: "An Angular 'Any Other Click' Directive"
 I recently implemented a very plain popup menu in Angular.  Showing the menu was simple, as you would expect, but dismissing the menu threw me for a bit of a loop.  How could I have my menu respond to a click event outside of the element hosting its directive?  After a bit of thought, I wrote the following 'any other click' directive.  Basically, the directive registers a click event on the `document` element.  This click event checks to see if it was generated from the element that registered the directive.  If not, it executes the code specified in the directive attribute.  jQuery is required since [`angular.element.find()`](https://docs.angularjs.org/api/ng/function/angular.element) is limited to lookups by tag name.
 
 ## Directive Source
-``` javascript
+{% highlight javascript linenos %}
 (function () {
     var module = angular.module('anyOtherClick', []);
 
@@ -37,7 +37,7 @@ I recently implemented a very plain popup menu in Angular.  Showing the menu was
         };
     }]);
 })();
-```
+{% endhighlight %}
 
 ## Plunker Demo
 <iframe style="width: 100%; height: 400px; background-color: white;" src="http://embed.plnkr.co/1mI8TAoTrDpIC4hQ4U4r/preview" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
