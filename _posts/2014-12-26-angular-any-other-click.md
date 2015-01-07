@@ -10,21 +10,18 @@ I recently implemented a very plain popup menu in Angular.  Showing the menu was
 (function () {
     var module = angular.module('anyOtherClick', []);
 
-    module.directive('anyOtherClick', ['$document', function ($document) {
+    var directiveName = "anyOtherClick";
+
+    module.directive(directiveName, ['$document', "$parse", function ($document, $parse) {
         return {
             restrict: 'A',
-            scope: {
-                anyOtherClick: "&",
-            },
             link:  function (scope, element, attr, controller) {
-                var localElement = element;
+                var anyOtherClickFunction = $parse(attr[directiveName]);
                 var documentClickHandler = function (event) {
-                    var eventOutsideTarget = (localElement[0] !== event.target) && (0 === localElement.find(event.target).length);
+                    var eventOutsideTarget = (element[0] !== event.target) && (0 === element.find(event.target).length);
                     if (eventOutsideTarget) {
                         scope.$apply(function () {
-                            if (scope.anyOtherClick) {
-                                scope.anyOtherClick();
-                            }
+                            anyOtherClickFunction(scope, {});
                         });
                     }
                 };
@@ -49,3 +46,6 @@ I recently implemented a very plain popup menu in Angular.  Showing the menu was
 ## Disclaimer
 
 The code above is working for me in production.  However, I only use this directive a few times on my pages.  As with most things in Angular, you'd need to re-evaluate this directive's performance if it is used in a large `ng-repeat` or other looping constructs.
+
+### Update - 2015.01.07
+I have updated the directive to avoid creating an isolate scope based on the [`ng-click` source](https://github.com/angular/angular.js/blob/master/src/ng/directive/ngEventDirs.js).  This lets the directive play nice with other angular directives.
