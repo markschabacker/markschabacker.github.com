@@ -5,7 +5,7 @@ title: "A Commit Message Experiment"
 
 I've been running an experiment lately that has created some interesting results in my day to day workflow. It goes as follows:
 
-> Write the commit message before making any changes
+> Write the commit message before making any changes.
 
 This small idea has had the following beneficial results:
 
