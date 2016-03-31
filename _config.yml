@@ -1,6 +1,6 @@
 # Jekyll
 exclude: []
-markdown: redcarpet
+markdown: kramdown
 
 permalink: /blog/:year/:month/:day/:title/
 tagline: Mark Schabacker
@@ -14,3 +14,7 @@ navigation:
   url: /blog/
   alt_url: /blog/index.html
   layout: archive
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
